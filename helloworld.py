@@ -4,18 +4,11 @@
 import tweepy
 import time
 import sys
+from credentials import CONSUMER_KEY, CONSUMER_SECRET, ACCESS_KEY, ACCESS_SECRET
 
-argfile = str(sys.argv[1])
 
-# enter the corresponding information from your Twitter application:
-# keep the quotes, replace this with your consumer key
-CONSUMER_KEY = ''
-# keep the quotes, replace this with your consumer secret key
-CONSUMER_SECRET = ''
-# keep the quotes, replace this with your access token
-ACCESS_KEY = ''
-# keep the quotes, replace this with your access token secret
-ACCESS_SECRET = ''
+argfile = 'helloworld.txt'
+
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
 auth.set_access_token(ACCESS_KEY, ACCESS_SECRET)
