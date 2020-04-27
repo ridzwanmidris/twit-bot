@@ -12,7 +12,7 @@ ACCESS_KEY = environ['ACCESS_KEY']
 ACCESS_SECRET = environ['ACCESS_SECRET']
 
 
-argfile = 'helloworld.txt'
+argfile = str(environ['helloworld.txt'])
 
 
 auth = tweepy.OAuthHandler(CONSUMER_KEY, CONSUMER_SECRET)
